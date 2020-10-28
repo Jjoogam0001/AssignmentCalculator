@@ -104,6 +104,8 @@ public class Calculator {
     }
     public static int Subtration(int a , int b){
         int result = a - b;
+        System.out.println("Answer: "+result);
+
         return result;
 
     }
