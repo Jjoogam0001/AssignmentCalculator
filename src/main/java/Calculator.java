@@ -23,6 +23,7 @@ public class Calculator {
 
 
         switch (choice){
+
             case 1:
                 System.out.println("Enter 1 number");
                 number = input.nextInt();
@@ -75,13 +76,13 @@ public class Calculator {
 
     }
 
-    private static int Addition(int a , int b){
+    public static int Addition(int a , int b){
         int total = a + b;
         System.out.println("Answer: "+total);
         return  total;
 
     }
-    private static int Multiplication(int a , int b){
+    public static int Multiplication(int a , int b){
         int total = a * b;
         System.out.println("Answer: "+total);
 
@@ -89,7 +90,7 @@ public class Calculator {
 
 
     }
-    private static int Division(int a, int b){
+    public static int Division(int a, int b){
         int result = 0;
         if(a < b ){
             System.out.println("Sorry you cant divuide a smaller number to a bigger number ");
@@ -101,12 +102,12 @@ public class Calculator {
 
         return  result;
     }
-    private static int Subtration(int a , int b){
+    public static int Subtration(int a , int b){
         int result = a - b;
         return result;
 
     }
-    private static  void Menu(){
+    public static  void Menu(){
         System.out.println("Hello Welcome to my first Lexicon Asignment(Calculator)");
         System.out.println();
         System.out.println("-------------------");
