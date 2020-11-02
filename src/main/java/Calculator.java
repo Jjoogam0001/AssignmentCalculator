@@ -1,5 +1,3 @@
-import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
-
 import java.util.Scanner;
 
 public class Calculator {
@@ -18,7 +16,7 @@ public class Calculator {
     do {
         // used a do while loop,so as to run over again the menu until the user exits the application
 
-        Menu();
+        menu();
         choice = input.nextInt();
 
 
@@ -30,7 +28,7 @@ public class Calculator {
                 System.out.println("Enter 2 number");
                 number2 = input.nextInt();
 
-                Addition(number,number2);
+                addition(number,number2);
                 break;
 
             case 2:
@@ -39,7 +37,7 @@ public class Calculator {
                 System.out.println("Enter 2 number");
                 number2 = input.nextInt();
 
-                Multiplication(number,number2);
+                multiplication(number,number2);
 
                 break;
             case 3:
@@ -47,7 +45,7 @@ public class Calculator {
                 number = input.nextInt();
                 System.out.println("Enter 2 number");
                 number2 = input.nextInt();
-                Division(number,number2);
+                division(number,number2);
 
                 break;
             case 4:
@@ -56,7 +54,7 @@ public class Calculator {
                 System.out.println("Enter 2 number");
                 number2 = input.nextInt();
 
-                Subtration(number,number2);
+                subtration(number,number2);
                 break;
             case 5:
                 System.out.println("Goodbye");
@@ -76,13 +74,13 @@ public class Calculator {
 
     }
 
-    public static int Addition(int a , int b){
+    public static int addition(int a , int b){
         int total = a + b;
         System.out.println("Answer: "+total);
         return  total;
 
     }
-    public static int Multiplication(int a , int b){
+    public static int multiplication(int a , int b){
         int total = a * b;
         System.out.println("Answer: "+total);
 
@@ -90,7 +88,7 @@ public class Calculator {
 
 
     }
-    public static int Division(int a, int b){
+    public static int division(int a, int b){
         int result = 0;
         if(a < b ){
             System.out.println("Sorry you cant divuide a smaller number to a bigger number ");
@@ -102,14 +100,14 @@ public class Calculator {
 
         return  result;
     }
-    public static int Subtration(int a , int b){
+    public static int subtration(int a , int b){
         int result = a - b;
         System.out.println("Answer: "+result);
 
         return result;
 
     }
-    public static  void Menu(){
+    public static  void menu(){
         System.out.println("Hello Welcome to my first Lexicon Asignment(Calculator)");
         System.out.println();
         System.out.println("-------------------");
